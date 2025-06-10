@@ -1,0 +1,7 @@
+package com.unillanos.main.exceptions;
+
+public class AuthenticationFailedException extends RuntimeException {
+    public AuthenticationFailedException(String message) {
+        super(message);
+    }
+}
