@@ -1,0 +1,68 @@
+/* Estilos navbar ecológico */
+.navbar-eco {
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-eco-light {
+	background-color: #d9f2d9; /* Verde claro */
+}
+
+.navbar-eco-dark {
+	background-color: #1c3326; /* Verde oscuro */
+}
+
+.navbar-eco .nav-link {
+	font-weight: 600;
+	color: #2e4e2e !important;
+	position: relative;
+	padding: 0.5rem 1rem;
+	transition: color 0.3s, background-color 0.3s;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+/* Para modo oscuro */
+.navbar-eco-dark .nav-link {
+	color: #ffffff !important;
+}
+
+/* Hover - Cambiar el fondo y el color de las letras */
+.navbar-eco .nav-link:hover {
+	background-color: #4caf50; /* Fondo verde */
+	color: #ffffff !important; /* Texto blanco */
+}
+
+/* Elimina subrayado en el hover */
+.navbar-eco .nav-link:hover,
+.navbar-eco .nav-link:focus {
+	text-decoration: none;
+}
+
+/* Iconos más grandes */
+.navbar-eco .dropdown-toggle {
+	font-size: 1.5rem; /* Tamaño aumentado */
+}
+
+/* Estilos dropdown */
+.dropdown-menu .dropdown-item {
+	transition: background-color 0.2s, font-weight 0.2s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+	background-color: #cdeac0; /* Verde suave */
+	font-weight: bold;
+}
+
+/* Alineación y espaciado */
+.navbar-eco .navbar-nav .nav-item {
+	margin: 0 10px;
+}
+
+.navbar-eco .d-flex {
+	gap: 12px;
+}
+
+/* Logo más pequeño */
+.navbar-eco-logo {
+	height: 8rem; /* Reducido */
+}

@@ -1,0 +1,267 @@
+/* Estilo base */
+.post-comentarios-container {
+	padding: 1rem;
+	max-width: 900px;
+	margin: auto;
+}
+
+.crear-post,
+.crear-comentario,
+.lista-posts .post {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	background-color: #f9f9f9;
+}
+
+.crear-post input,
+.crear-post textarea,
+.crear-comentario input,
+.lista-posts input,
+.lista-posts textarea {
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.crear-post button,
+.crear-comentario button,
+.lista-posts button {
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	margin-right: 0.4rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.lista-posts .post h3 {
+	margin: 0 0 0.5rem 0;
+}
+
+.lista-posts .post .acciones button {
+	margin-right: 0.3rem;
+}
+
+.comentarios {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid #ddd;
+}
+
+.comentario {
+	background-color: #efefef;
+	padding: 0.6rem;
+	border-radius: 6px;
+	margin-bottom: 0.5rem;
+}
+
+.comentario .acciones {
+	margin-top: 0.3rem;
+}
+
+/* ----------------------- */
+/* Estilos de accesibilidad */
+/* ----------------------- */
+
+.dark-mode {
+	background-color: #121212;
+	color: #f0f0f0;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+	background-color: #1e1e1e;
+	color: #f0f0f0;
+	border: 1px solid #333;
+}
+
+.dark-mode .crear-post,
+.dark-mode .crear-comentario,
+.dark-mode .post {
+	background-color: #1e1e1e;
+	border-color: #444;
+}
+
+.color-blind {
+	filter: grayscale(100%);
+}
+
+.large-font {
+	font-size: 1.3rem;
+}
+
+.small-font {
+	font-size: 0.85rem;
+}
+
+.high-contrast {
+	background-color: #000;
+	color: #fff;
+}
+
+.high-contrast input,
+.high-contrast textarea {
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.high-contrast-inverse {
+	background-color: #fff;
+	color: #000;
+}
+
+.high-contrast-inverse input,
+.high-contrast-inverse textarea {
+	background-color: #fff;
+	color: #000;
+	border: 2px solid #000;
+}
+
+.spacious {
+	line-height: 1.8;
+	letter-spacing: 0.05rem;
+	padding: 2rem;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.center-align input,
+.center-align textarea {
+	text-align: center;
+}
+
+/* Estilos base */
+.comentarios {
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin-top: 1rem;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+.comentario {
+	margin-bottom: 1rem;
+	padding: 0.75rem;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+}
+
+.comentario-acciones {
+	margin-top: 0.5rem;
+}
+
+.comentario button {
+	margin-right: 0.5rem;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.crear-comentario {
+	margin-top: 1rem;
+}
+
+.crear-comentario textarea {
+	width: 100%;
+	height: 60px;
+	resize: vertical;
+	padding: 0.5rem;
+}
+
+.crear-comentario button {
+	margin-top: 0.5rem;
+	padding: 0.5rem 1rem;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+.comentario button {
+	margin-top: 0.5rem;
+	padding: 0.5rem 1rem;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+/* Modos de accesibilidad */
+
+/* Modo oscuro */
+.dark-mode-comentarios {
+	background-color: #1e1e1e;
+	color: #f0f0f0;
+}
+
+.dark-mode-comentarios .comentario {
+	background-color: #2e2e2e;
+	border-color: #444;
+}
+
+/* Daltonismo */
+.color-blind {
+	background-color: #f6f3e4 !important;
+	color: #333 !important;
+}
+
+/* Fuente grande */
+.large-font {
+	font-size: 1.25rem;
+}
+
+/* Fuente pequeña */
+.small-font {
+	font-size: 0.85rem;
+}
+
+/* Alto contraste */
+.high-contrast {
+	background-color: #000 !important;
+	color: #fff !important;
+}
+
+.high-contrast .comentario {
+	background-color: #111 !important;
+	border-color: #fff !important;
+}
+
+/* Alto contraste invertido */
+.high-contrast-inverse {
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+.high-contrast-inverse .comentario {
+	background-color: #eee !important;
+	border-color: #000 !important;
+}
+
+/* Espaciado amplio */
+.spacious {
+	padding: 2rem !important;
+}
+
+.spacious .comentario {
+	padding: 1.5rem !important;
+	margin-bottom: 2rem !important;
+}
+
+/* Texto centrado */
+.center-align {
+	text-align: center;
+}

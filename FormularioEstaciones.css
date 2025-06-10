@@ -1,0 +1,216 @@
+/* Contenedor del formulario */
+.formulario-estacion {
+	max-width: 600px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: #fff;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Título */
+.formulario-estacion h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 1.6rem;
+}
+
+/* Campos del formulario */
+.formulario-estacion label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+.formulario-estacion input,
+.formulario-estacion textarea {
+	width: 100%;
+	padding: 0.8rem;
+	margin-bottom: 1.5rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-size: 1rem;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Foco en los campos */
+.formulario-estacion input:focus,
+.formulario-estacion textarea:focus {
+	border-color: #4caf50;
+	box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+	outline: none;
+}
+
+/* Botones del formulario */
+.form-botones {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem; /* Más espacio entre los botones */
+}
+
+.boton-principal,
+.cancelar,
+.eliminar {
+	padding: 0.8rem 1.8rem; /* Aumenta el espacio entre los botones */
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.1s ease;
+	display: inline-flex; /* Cambiado a inline-flex para alineación horizontal */
+	align-items: center; /* Centra verticalmente el icono y el texto */
+	gap: 0.7rem; /* Más espacio entre los iconos y el texto */
+	font-weight: 600; /* Fuente un poco más gruesa */
+}
+
+.boton-principal {
+	background-color: #4caf50;
+	color: white;
+}
+
+.cancelar {
+	background-color: #f0f0f0;
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+.eliminar {
+	background-color: #ff4d4d;
+	color: white;
+}
+
+/* Efectos en los botones */
+.boton-principal:hover {
+	background-color: #43a047;
+}
+
+.cancelar:hover {
+	background-color: #e0e0e0;
+}
+
+.eliminar:hover {
+	background-color: #e53935;
+}
+
+/* Botones activos */
+.boton-principal:active,
+.cancelar:active,
+.eliminar:active {
+	transform: scale(0.98);
+}
+
+/* Imágenes previas */
+.imagenes-previas {
+	margin-top: 2rem;
+}
+
+.preview-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Imágenes más pequeñas */
+	gap: 1.5rem; /* Más espacio entre las imágenes */
+    padding: 1rem;
+}
+
+.imagen-item {
+	position: relative;
+}
+
+.imagen-item img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.imagen-item button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	font-size: 1.2rem;
+	color: #ff0000;
+	cursor: pointer;
+}
+
+.imagen-item button:hover {
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* Imágenes de portada */
+.imagen-portada img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 2rem;
+}
+
+/* Modo oscuro */
+.dark-mode .formulario-estacion {
+	background-color: #2c2c2c;
+	color: #f0f0f0;
+}
+
+.dark-mode .formulario-estacion input,
+.dark-mode .formulario-estacion textarea {
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #666;
+}
+
+.dark-mode .form-botones .boton-principal {
+	background-color: #4caf50;
+}
+
+.dark-mode .form-botones .eliminar {
+	background-color: #ff4d4d;
+}
+
+.dark-mode .form-botones .cancelar {
+    background-color: #999393;
+}
+
+/* Modo daltónico */
+.color-blind .formulario-estacion {
+	background-color: #f0ffff;
+	color: #000;
+}
+
+.color-blind .formulario-estacion input,
+.color-blind .formulario-estacion textarea {
+	background-color: #ffffff;
+	color: #000;
+	border: 1px solid #666;
+}
+
+.color-blind .form-botones .boton-principal {
+	background-color: rgb(76, 175, 80);
+}
+
+.color-blind .form-botones .eliminar {
+	background-color: #ff4d4d;
+}
+
+.color-blind .form-botones .cancelar {
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+}
+
+/* Aumento del tamaño de la fuente desde accesibilidad */
+html {
+	font-size: 100%; /* Tamaño base */
+}
+
+@media (min-width: 768px) {
+	/* Puedes aumentar el tamaño de fuente en dispositivos más grandes */
+	html {
+		font-size: 112.5%; /* 1.125x para pantallas más grandes */
+	}
+}
+
+@media (max-width: 480px) {
+	/* Asegurarse que el tamaño de la fuente sea accesible en dispositivos pequeños */
+	html {
+		font-size: 90%; /* Reducción del tamaño de la fuente */
+	}
+}

@@ -1,0 +1,154 @@
+/* =============================
+    Footer ecológico – Base
+============================= */
+.footer-eco {
+    padding: 2rem 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* =============================
+    Distribución del contenido
+============================= */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    padding: 10px;
+    text-align: center; /* Centramos el texto por defecto */
+}
+
+/* Ajustamos la alineación para que se vea mejor en pantallas más grandes */
+@media (min-width: 769px) {
+    .footer-left {
+        text-align: left;
+    }
+    .footer-center {
+        text-align: center;
+    }
+    .footer-right {
+        text-align: right;
+    }
+}
+
+/* =============================
+    Enlace a FAQ
+============================= */
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-link:hover {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.faq-icon {
+    margin-right: 8px;
+    transition: color 0.3s;
+}
+
+/* =============================
+    Contacto
+============================= */
+.footer-contact {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-end; /* Alinea los elementos a la derecha por defecto */
+}
+
+.footer-contact li svg {
+    color: #4caf50;
+}
+
+.footer-contact li span {
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+/* Ajustamos la alineación para que se vea mejor en pantallas más grandes */
+@media (min-width: 769px) {
+    .footer-contact {
+        text-align: right;
+    }
+    .footer-contact li {
+        justify-content: flex-end;
+    }
+}
+
+/* =============================
+    Texto inferior (copyright)
+============================= */
+.footer-text {
+    text-align: center;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* =============================
+    Responsivo
+============================= */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-contact li {
+        justify-content: center;
+    }
+}
+
+/* =============================
+    Estilos para el modo daltónico (si son diferentes al navbar)
+============================= */
+.footer-eco-colorblind {
+    background-color: #add8e6; /* Azul claro accesible */
+    color: #000000;
+}
+
+.footer-eco-colorblind .footer-link:hover {
+    background-color: #6495ed; /* Azul más oscuro */
+    color: #ffffff;
+}
+
+.footer-eco-colorblind .footer-contact li svg {
+    color: #6495ed;
+}
+
+.footer-eco-colorblind .footer-contact li span {
+    color: #000000;
+}

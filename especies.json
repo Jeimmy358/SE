@@ -1,0 +1,51 @@
+[
+	{
+		"nombre_cientifico": "Saccopteryx leptura",
+		"nombre_comun": "Murciélago de tirantes pardo",
+		"descripcion": "Es un murciélago insectívoro que habita en ambientes antrópicos, usando edificaciones como refugios. Puede encontrarse en solitario o en grupos pequeños.",
+		"tipo": "mamífero",
+		"modelo_3d": "https://sketchfab.com/models/8719886cf8f645ca9d53d766976baf9c/embed"
+	},
+	{
+		"nombre_cientifico": "Dactylomys dactylinus",
+		"nombre_comun": "Rata del bambú",
+		"descripcion": "Roedor que habita la cuenca amazónica. Se alimenta de brotes de bambú y emite sonidos característicos como parte de su comunicación.",
+		"tipo": "mamífero",
+		"modelo_3d": "https://sketchfab.com/models/bf516bd5a93341b194976f6f391d1e30/embed"
+	},
+	{
+		"nombre_cientifico": "Guadua sp.",
+		"nombre_comun": "Guadua, bambú",
+		"descripcion": "Planta de la familia Poaceae que crece en ambientes húmedos. Ofrece refugio a aves y otros animales. También tiene usos en artesanías y construcción.",
+		"tipo": "planta",
+		"modelo_3d": "https://sketchfab.com/models/a02bf0e3ffe44617ad49daf3cd94fe59/embed"
+	},
+	{
+		"nombre_cientifico": "Micrurus sp.",
+		"nombre_comun": "Serpiente de coral",
+		"descripcion": "Serpiente venenosa de hábitos tanto diurnos como nocturnos. Se alimenta de peces, lagartos y pequeños roedores.",
+		"tipo": "reptil",
+		"modelo_3d": "https://sketchfab.com/models/88d57c4b19fc480f9787c18f2f3731a3/embed"
+	},
+	{
+		"nombre_cientifico": "Melanerpes cruentatus",
+		"nombre_comun": "Carpintero azulado / Carpintero de cresta roja",
+		"descripcion": "Ave que se alimenta de insectos y frutas. Habita en el dosel de los árboles y bordes de bosques.",
+		"tipo": "ave",
+		"modelo_3d": "https://sketchfab.com/models/ae92d39e70674278b3d21f2632b1249f/embed"
+	},
+	{
+		"nombre_cientifico": "Colaptes punctigula",
+		"nombre_comun": "Carpintero pecho punteado",
+		"descripcion": "Ave carpintera que habita en espacios abiertos y estratos bajos del bosque. Su dieta se basa en insectos.",
+		"tipo": "ave",
+		"modelo_3d": "https://sketchfab.com/models/d498f6b08b0648268eac9f15b77acb92/embed"
+	},
+	{
+		"nombre_cientifico": "Saimiri cassiquiarensis",
+		"nombre_comun": "Mono ardilla de Humboldt",
+		"descripcion": "Primate diurno y arbóreo. Se alimenta de frutas e insectos. Vive en grupos familiares y es común en bosques secundarios.",
+		"tipo": "mamífero",
+		"modelo_3d": "https://sketchfab.com/models/af7767bf06db4d828a5d4c70c984d952/embed"
+	}
+]

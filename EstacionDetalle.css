@@ -1,0 +1,58 @@
+/* EstacionDetalle.css */
+
+.estacion-detalle-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de portada */
+.estacion-portada img {
+	width: 100%;
+	max-height: 400px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+/* Descripción larga */
+.estacion-descripcion-larga {
+	margin-top: 20px;
+}
+
+/* Carrusel */
+.estacion-carrusel {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+	overflow-x: auto;
+	padding-bottom: 10px;
+}
+
+.estacion-carrusel img {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 6px;
+	flex-shrink: 0;
+	transition: transform 0.2s ease;
+}
+
+.estacion-carrusel img:hover {
+	transform: scale(1.02);
+}
+
+/* Mapa */
+.estacion-mapa {
+	margin: 60px;
+}
+
+/* Accesibilidad general (se puede complementar con JS si deseas animar el cambio) */
+.dark-mode .estacion-detalle-container {
+	background-color: #222;
+	color: #eee;
+}
+
+.light-mode .estacion-detalle-container {
+	background-color: #fff;
+	color: #222;
+}

@@ -1,0 +1,92 @@
+.admin-layout {
+	max-width: 1000px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-title {
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 1.8rem;
+}
+
+.admin-tabs {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.admin-tab {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.6rem 1rem;
+	background-color: #f0f0f0;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.admin-tab:hover {
+	background-color: #e0e0e0;
+}
+
+.admin-tab.active {
+	background-color: #4caf50;
+	color: white;
+}
+
+.admin-icon {
+	font-size: 1.2rem;
+}
+
+/* Accesibilidad - Modo oscuro */
+.dark-mode .admin-layout {
+	background-color: #2c2c2c;
+	color: #f0f0f0;
+}
+
+.dark-mode .admin-tab {
+	background-color: #444;
+	color: #ddd;
+}
+
+.dark-mode .admin-tab.active {
+	background-color: #43a047;
+	color: #fff;
+}
+
+/* Accesibilidad - Daltónico */
+.color-blind .admin-layout {
+	background-color: #f0ffff;
+	color: #000;
+}
+
+.color-blind .admin-tab {
+	background-color: #e6f7ff;
+	color: #000;
+}
+
+.color-blind .admin-tab.active {
+	background-color: rgb(76, 175, 80);
+	color: white;
+}
+
+/* Fuente grande */
+.large-font .admin-layout,
+.large-font .admin-tab {
+	font-size: 1.2rem;
+}
+
+/* Fuente pequeña */
+.small-font .admin-layout,
+.small-font .admin-tab {
+	font-size: 0.9rem;
+}

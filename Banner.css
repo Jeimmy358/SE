@@ -1,0 +1,246 @@
+/* Banner.css */
+.banner-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    transition: background-color 0.3s ease; /* Mantener transiciones para accesibilidad */
+}
+
+.banner-slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Mantener transiciones para accesibilidad */
+    width: 100%;
+}
+
+.banner-slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.banner-card {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Mantener transiciones para accesibilidad */
+}
+
+.banner-image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Asegurar que la imagen sea un bloque */
+}
+
+.banner-card-content {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.banner-title {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease; /* Mantener transiciones para accesibilidad */
+}
+
+.banner-description {
+    color: #666;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-size: 0.8rem;
+    overflow: hidden;
+    transition: color 0.3s ease; /* Mantener transiciones para accesibilidad */
+}
+
+.banner-date {
+    color: #999;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+    transition: color 0.3s ease; /* Mantener transiciones para accesibilidad */
+}
+
+.banner-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Mantener transiciones para accesibilidad */
+    font-size: 0.75rem;
+}
+
+.banner-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    transition: color 0.3s ease; /* Mantener transiciones para accesibilidad */
+}
+
+.banner-arrow.left {
+    left: 10px;
+}
+
+.banner-arrow.right {
+    right: 10px;
+}
+
+.banner-indicators {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.indicator-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Mantener transiciones para accesibilidad */
+}
+
+.indicator-dot.active {
+    background-color: #007bff;
+}
+
+/* Estilos de contraste */
+.high-contrast-banner {
+    background-color: #000 !important; /* !important para asegurar la prioridad */
+    color: #fff !important;
+}
+
+.high-contrast-card {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.high-contrast-card-inverse {
+    background-color: #eee !important;
+    color: #000 !important;
+}
+
+.high-contrast-text {
+    color: #fff !important;
+}
+
+.high-contrast-text-inverse {
+    color: #000 !important;
+}
+
+.high-contrast-text-secondary {
+    color: #ddd !important;
+}
+
+.high-contrast-text-secondary-inverse {
+    color: #333 !important;
+}
+
+.high-contrast-text-tertiary {
+    color: #aaa !important;
+}
+
+.high-contrast-text-tertiary-inverse {
+    color: #666 !important;
+}
+
+.high-contrast-link {
+    color: #0f9d58 !important;
+}
+
+.high-contrast-link-inverse {
+    color: #d64541 !important;
+}
+
+.high-contrast-indicator {
+    background-color: #555 !important;
+}
+
+.high-contrast-indicator.active {
+    background-color: #0f9d58 !important;
+}
+
+.high-contrast-indicator-inverse {
+    background-color: #bbb !important;
+}
+
+.high-contrast-indicator-inverse.active {
+    background-color: #d64541 !important;
+}
+
+/* Estilos de fuente */
+.large-font {
+    font-size: 1.2rem !important; /* Ajusta el tamaño según sea necesario */
+}
+
+.small-font {
+    font-size: 0.9rem !important; /* Ajusta el tamaño según sea necesario */
+}
+
+.large-font .banner-title {
+    font-size: 1.3rem !important;
+}
+
+.small-font .banner-title {
+    font-size: 0.95rem !important;
+}
+
+.large-font .banner-description {
+    font-size: 1rem !important;
+}
+
+.small-font .banner-description {
+    font-size: 0.7rem !important;
+}
+
+.large-font .banner-link {
+    font-size: 0.85rem !important;
+}
+
+.small-font .banner-link {
+    font-size: 0.65rem !important;
+}
+
+.large-font .banner-date {
+    font-size: 0.8rem !important;
+}
+
+.small-font .banner-date {
+    font-size: 0.6rem !important;
+}

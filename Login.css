@@ -1,0 +1,423 @@
+/* Estilos base del contenedor */
+.login-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.login-icon {
+    position: absolute;
+    padding: 0.7rem;
+    color: #777;
+}
+
+.input-icon input {
+    padding: 0.7rem 0.7rem 0.7rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.login-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #43a047;
+}
+
+.login-links {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.1s ease;
+    margin: 0 0.5rem;
+    padding: 0;
+}
+
+.link-btn:hover {
+    color: #0056b3;
+}
+
+.link-btn:active {
+    transform: scale(0.98);
+}
+
+/* =============================
+    Estilos para el Modo Oscuro
+============================= */
+.dark-mode .login-container {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .login-container h2 {
+    color: #f0f0f0;
+}
+
+.dark-mode .login-label {
+    color: #f0f0f0;
+}
+
+.dark-mode .input-icon input {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.dark-mode .login-icon {
+    color: #aaa;
+}
+
+.dark-mode .login-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.dark-mode .login-btn:hover {
+    background-color: #43a047;
+}
+
+.dark-mode .error {
+    color: #ff6b6b;
+}
+
+.dark-mode .link-btn {
+    color: #bbdefb;
+}
+
+.dark-mode .link-btn:hover {
+    color: #90caf9;
+}
+
+/* =============================
+    Estilos para el Modo Daltónico
+============================= */
+.color-blind .login-container {
+    background-color: #f0ffff;
+    color: #000;
+}
+
+.color-blind .login-container h2 {
+    color: #000;
+}
+
+.color-blind .login-label {
+    color: #000;
+}
+
+.color-blind .input-icon input {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #666;
+}
+
+.color-blind .login-icon {
+    color: #333;
+}
+
+.color-blind .login-btn {
+    background-color: rgb(76, 175, 80);
+    color: #fff;
+}
+
+.color-blind .login-btn:hover {
+    background-color: #4caf50;
+}
+
+.color-blind .error {
+    color: #cc0000;
+}
+
+.color-blind .link-btn {
+    color: #006400; /* Verde oscuro para contraste */
+}
+
+.color-blind .link-btn:hover {
+    color: #1caa1c;
+}
+
+/* =============================
+    Estilos para Fuente Grande
+============================= */
+.large-font .login-container,
+.large-font .login-label,
+.large-font .input-icon input,
+.large-font .login-btn,
+.large-font .link-btn,
+.large-font .error {
+    font-size: 1.2rem;
+}
+
+.large-font .login-container h2 {
+    font-size: 1.5rem;
+}
+
+.large-font .login-label {
+    font-weight: bold;
+}
+
+.large-font .input-icon input {
+    padding: 1rem 1.2rem 1rem 3rem;
+}
+
+.large-font .login-icon {
+    padding: 1rem;
+}
+
+.large-font .login-btn {
+    padding: 1rem;
+}
+
+/* =============================
+    Estilos para Fuente Pequeña
+============================= */
+.small-font .login-container,
+.small-font .login-label,
+.small-font .input-icon input,
+.small-font .login-btn,
+.small-font .link-btn,
+.small-font .error {
+    font-size: 0.9rem;
+}
+
+.small-font .login-container h2 {
+    font-size: 1.3rem;
+}
+
+.small-font .login-label {
+    font-weight: normal;
+}
+
+.small-font .input-icon input {
+    padding: 0.6rem 0.8rem 0.6rem 2.5rem;
+}
+
+.small-font .login-icon {
+    padding: 0.6rem;
+}
+
+.small-font .login-btn {
+    padding: 0.6rem;
+}
+
+/* =============================
+    Estilos para Contraste Alto
+============================= */
+.high-contrast .login-container {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.high-contrast .login-container h2 {
+    color: #fff;
+}
+
+.high-contrast .login-label {
+    color: #fff;
+}
+
+.high-contrast .input-icon input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.high-contrast .login-icon {
+    color: #fff;
+}
+
+.high-contrast .login-btn {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.high-contrast .login-btn:hover {
+    background-color: #e64a19;
+}
+
+.high-contrast .error {
+    color: #ff0000;
+}
+
+.high-contrast .link-btn {
+    color: #bbdefb; /* Un color claro para contraste */
+}
+
+.high-contrast .link-btn:hover {
+    color: #fff;
+}
+
+/* =============================
+    Estilos para Contraste Alto Invertido
+============================= */
+.high-contrast-inverse .login-container {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.high-contrast-inverse .login-container h2 {
+    color: #000;
+}
+
+.high-contrast-inverse .login-label {
+    color: #000;
+}
+
+.high-contrast-inverse .input-icon input {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.high-contrast-inverse .login-icon {
+    color: #000;
+}
+
+.high-contrast-inverse .login-btn {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+.high-contrast-inverse .login-btn:hover {
+    background-color: #0097a7;
+}
+
+.high-contrast-inverse .error {
+    color: #d32f2f;
+}
+
+.high-contrast-inverse .link-btn {
+    color: #000;
+}
+
+.high-contrast-inverse .link-btn:hover {
+    color: #333;
+}
+
+/* =============================
+    Estilos para Espaciado Mejorado (spacious)
+============================= */
+.spacious .login-container {
+    padding: 3rem;
+}
+
+.spacious .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.spacious .login-label {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.spacious .input-icon input {
+    padding: 1rem 1rem 1rem 3rem;
+    font-size: 1.1rem;
+}
+
+.spacious .login-icon {
+    padding: 1rem;
+}
+
+.spacious .login-btn {
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.spacious .error {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.spacious .login-links {
+    margin-top: 1.5rem;
+}
+
+.spacious .link-btn {
+    font-size: 1rem;
+    margin: 0 0.75rem;
+}
+
+/* =============================
+    Estilos para Alineación Centrada (center-align)
+============================= */
+.center-align .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* O ajusta según necesites */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.center-align .login-form-group {
+    width: 100%;
+    max-width: 350px; /* Ajusta el ancho del formulario centrado */
+}
+
+.center-align .login-btn {
+    width: 100%;
+}
+
+.center-align .login-links {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: space-around;
+}

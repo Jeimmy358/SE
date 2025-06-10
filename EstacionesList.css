@@ -1,0 +1,49 @@
+.estaciones-list-container {
+    padding: 20px;
+}
+
+.estaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.estacion-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.estacion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estacion-image-container {
+    width: 100%;
+    height: 200px; /* Ajusta la altura deseada */
+    overflow: hidden;
+}
+
+.estacion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.estacion-info {
+    padding: 15px;
+}
+
+.estacion-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.estacion-descripcion {
+    margin-bottom: 10px;
+}

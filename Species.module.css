@@ -1,0 +1,33 @@
+.container {
+	padding: 1rem;
+	background-color: var(--background); /* usa variables CSS si tienes */
+	color: var(--text-color);
+	font-family: "Arial", sans-serif;
+}
+
+.specieCard {
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	background-color: var(--card-background);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.specieName {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.specieDescription {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.model3d {
+	width: 100%;
+	height: 480px;
+	border-radius: 6px;
+}
+
+

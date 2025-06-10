@@ -1,0 +1,133 @@
+/* Contenedor principal de las preguntas frecuentes */
+.faq-container {
+    padding: 20px; /* Añade espacio alrededor del contenedor principal */
+}
+
+/* Lista que contiene cada pregunta y respuesta */
+.faq-list {
+    margin-top: 20px; /* Espacio entre el título y la lista */
+}
+
+/* Contenedor individual de cada pregunta y respuesta */
+.faq-item {
+    margin-bottom: 15px; /* Espacio entre cada elemento de la lista */
+    border: 1px solid #ccc; /* Borde sutil para visualización */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido desplegable no se salga del borde */
+    transition: border-color 0.3s ease;
+}
+
+.dark-mode .faq-item {
+    border-color: #555;
+}
+
+.color-blind .faq-item {
+    border-color: #888;
+}
+
+.high-contrast .faq-item {
+    border-color: #fff;
+}
+
+/* Estilos para la pregunta (toggle) */
+.faq-question {
+    padding: 15px; /* Aumenta el padding para más espacio interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Espacio para el texto de la pregunta */
+.faq-question h3 {
+    margin: 0; /* Elimina el margen predeterminado del h3 */
+    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
+    padding-right: 15px; /* Añade espacio a la derecha del texto para separarlo del icono */
+    font-size: 1em; /* Asegura un tamaño de fuente base */
+}
+
+/* Estilo para el icono de expandir/contraer */
+.faq-question span {
+    font-size: 1.2em; /* Aumenta un poco el tamaño del icono */
+    color: #555; /* Color del icono por defecto */
+}
+
+.dark-mode .faq-question span {
+    color: #eee;
+}
+
+.color-blind .faq-question span {
+    color: #333;
+}
+
+.high-contrast .faq-question span {
+    color: #fff;
+}
+
+/* Hover y estilos cuando el toggle está activo */
+.faq-question:hover {
+    background-color: #444;
+    color: white;
+}
+
+.faq-question:hover span {
+    color: white;
+}
+
+/* Estilos para el toggle iluminado cuando está seleccionado */
+.faq-item.active .faq-question {
+    background-color: #0e5724;
+    color: white;
+}
+
+.faq-item.active .faq-question span {
+    color: white;
+}
+
+/* Estilos para la respuesta */
+.faq-answer {
+    padding: 15px; /* Añade padding para más espacio alrededor de la respuesta */
+    background-color: #f9f9f9; /* Fondo ligero para la respuesta */
+    border-top: 1px solid #eee; /* Separador visual entre pregunta y respuesta */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .faq-answer {
+    background-color: #333;
+    color: #ddd;
+    border-top-color: #444;
+}
+
+.color-blind .faq-answer {
+    background-color: #eee;
+    color: #222;
+    border-top-color: #ccc;
+}
+
+.high-contrast .faq-answer {
+    background-color: #000;
+    color: #fff;
+    border-top-color: #fff;
+}
+
+/* Modo oscuro */
+.dark-mode .faq-question {
+    color: #f0f0f0; /* Color claro para mejorar visibilidad en modo oscuro */
+}
+
+/* Modo daltónico */
+.color-blind .faq-question {
+    color: #000; /* Color negro para mejorar contraste */
+}
+
+/* Contraste alto */
+.high-contrast .faq-question {
+    color: #fff; /* Texto blanco para alto contraste */
+    background-color: #333; /* Fondo más oscuro para alto contraste */
+}
+
+.faq-item.active.high-contrast .faq-question {
+    background-color: #000;
+    color: #fff;
+}
